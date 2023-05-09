@@ -1,0 +1,1129 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- Favicon icon -->
+    <link rel="icon" type="image/png" sizes="16x16" href="static/assets/images/favicon.png">
+    <title>Freedash Template - The Ultimate Multipurpose admin template</title>
+    <!-- Custom CSS -->
+    <link href="static/assets/extra-libs/c3/c3.min.css" rel="stylesheet">
+    <link href="static/assets/libs/chartist/dist/chartist.min.css" rel="stylesheet">
+    <link href="static/assets/extra-libs/jvector/jquery-jvectormap-2.0.2.css" rel="stylesheet" />
+    <!-- Custom CSS -->
+    <link href="static/dist/css/style.min.css" rel="stylesheet">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+
+<body>
+    <!-- ============================================================== -->
+    <!-- Preloader - style you can find in spinners.css -->
+    <!-- ============================================================== -->
+    <div class="preloader">
+        <div class="lds-ripple">
+            <div class="lds-pos"></div>
+            <div class="lds-pos"></div>
+        </div>
+    </div>
+    <!-- ============================================================== -->
+    <!-- Main wrapper - style you can find in pages.scss -->
+    <!-- ============================================================== -->
+    <div id="main-wrapper" data-theme="light" data-layout="vertical" data-navbarbg="skin6" data-sidebartype="full"
+        data-sidebar-position="fixed" data-header-position="fixed" data-boxed-layout="full">
+        <!-- ============================================================== -->
+        <!-- Topbar header - style you can find in pages.scss -->
+        <!-- ============================================================== -->
+        <header class="topbar" data-navbarbg="skin6">
+            <nav class="navbar top-navbar navbar-expand-lg">
+                <div class="navbar-header" data-logobg="skin6">
+                    <!-- This is for the sidebar toggle which is visible on mobile only -->
+                    <a class="nav-toggler waves-effect waves-light d-block d-lg-none" href="static/javascript:void(0)"><i
+                            class="ti-menu ti-close"></i></a>
+                    <!-- ============================================================== -->
+                    <!-- Logo -->
+                    <!-- ============================================================== -->
+                    <div class="navbar-brand">
+                        <!-- Logo icon -->
+                        <a href="static/index.html">
+                            <img src="static/assets/images/freedashDark.svg" alt="" class="img-fluid">
+                        </a>
+                    </div>
+                    <!-- ============================================================== -->
+                    <!-- End Logo -->
+                    <!-- ============================================================== -->
+                    <!-- ============================================================== -->
+                    <!-- Toggle which is visible on mobile only -->
+                    <!-- ============================================================== -->
+                    <a class="topbartoggler d-block d-lg-none waves-effect waves-light" href="static/javascript:void(0)"
+                        data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><i
+                            class="ti-more"></i></a>
+                </div>
+                <!-- ============================================================== -->
+                <!-- End Logo -->
+                <!-- ============================================================== -->
+                <div class="navbar-collapse collapse" id="navbarSupportedContent">
+                    <!-- ============================================================== -->
+                    <!-- toggle and nav items -->
+                    <!-- ============================================================== -->
+                    <ul class="navbar-nav float-left me-auto ms-3 ps-1">
+                        <!-- Notification -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle pl-md-3 position-relative" href="static/javascript:void(0)"
+                                id="bell" role="button" data-bs-toggle="dropdown" aria-haspopup="true"
+                                aria-expanded="false">
+                                <span><i data-feather="bell" class="svg-icon"></i></span>
+                                <span class="badge text-bg-primary notify-no rounded-circle">5</span>
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-left mailbox animated bounceInDown">
+                                <ul class="list-style-none">
+                                    <li>
+                                        <div class="message-center notifications position-relative">
+                                            <!-- Message -->
+                                            <a href="static/javascript:void(0)"
+                                                class="message-item d-flex align-items-center border-bottom px-3 py-2">
+                                                <div class="btn btn-danger rounded-circle btn-circle"><i
+                                                        data-feather="airplay" class="text-white"></i></div>
+                                                <div class="w-75 d-inline-block v-middle ps-2">
+                                                    <h6 class="message-title mb-0 mt-1">Luanch Admin</h6>
+                                                    <span class="font-12 text-nowrap d-block text-muted">Just see
+                                                        the my new
+                                                        admin!</span>
+                                                    <span class="font-12 text-nowrap d-block text-muted">9:30 AM</span>
+                                                </div>
+                                            </a>
+                                            <!-- Message -->
+                                            <a href="static/javascript:void(0)"
+                                                class="message-item d-flex align-items-center border-bottom px-3 py-2">
+                                                <span class="btn btn-success text-white rounded-circle btn-circle"><i
+                                                        data-feather="calendar" class="text-white"></i></span>
+                                                <div class="w-75 d-inline-block v-middle ps-2">
+                                                    <h6 class="message-title mb-0 mt-1">Event today</h6>
+                                                    <span
+                                                        class="font-12 text-nowrap d-block text-muted text-truncate">Just
+                                                        a reminder that you have event</span>
+                                                    <span class="font-12 text-nowrap d-block text-muted">9:10 AM</span>
+                                                </div>
+                                            </a>
+                                            <!-- Message -->
+                                            <a href="static/javascript:void(0)"
+                                                class="message-item d-flex align-items-center border-bottom px-3 py-2">
+                                                <span class="btn btn-info rounded-circle btn-circle"><i
+                                                        data-feather="settings" class="text-white"></i></span>
+                                                <div class="w-75 d-inline-block v-middle ps-2">
+                                                    <h6 class="message-title mb-0 mt-1">Settings</h6>
+                                                    <span
+                                                        class="font-12 text-nowrap d-block text-muted text-truncate">You
+                                                        can customize this template
+                                                        as you want</span>
+                                                    <span class="font-12 text-nowrap d-block text-muted">9:08 AM</span>
+                                                </div>
+                                            </a>
+                                            <!-- Message -->
+                                            <a href="static/javascript:void(0)"
+                                                class="message-item d-flex align-items-center border-bottom px-3 py-2">
+                                                <span class="btn btn-primary rounded-circle btn-circle"><i
+                                                        data-feather="box" class="text-white"></i></span>
+                                                <div class="w-75 d-inline-block v-middle ps-2">
+                                                    <h6 class="message-title mb-0 mt-1">Pavan kumar</h6> <span
+                                                        class="font-12 text-nowrap d-block text-muted">Just
+                                                        see the my admin!</span>
+                                                    <span class="font-12 text-nowrap d-block text-muted">9:02 AM</span>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <a class="nav-link pt-3 text-center text-dark" href="static/javascript:void(0);">
+                                            <strong>Check all notifications</strong>
+                                            <i class="fa fa-angle-right"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <!-- End Notification -->
+                        <!-- ============================================================== -->
+                        <!-- create new -->
+                        <!-- ============================================================== -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="static/#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i data-feather="settings" class="svg-icon"></i>
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="static/#">Action</a>
+                                <a class="dropdown-item" href="static/#">Another action</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="static/#">Something else here</a>
+                            </div>
+                        </li>
+                        <li class="nav-item d-none d-md-block">
+                            <a class="nav-link" href="static/javascript:void(0)">
+                                <div class="customize-input">
+                                    <select
+                                        class="custom-select form-control bg-white custom-radius custom-shadow border-0">
+                                        <option selected>EN</option>
+                                        <option value="1">AB</option>
+                                        <option value="2">AK</option>
+                                        <option value="3">BE</option>
+                                    </select>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                    <!-- ============================================================== -->
+                    <!-- Right side toggle and nav items -->
+                    <!-- ============================================================== -->
+                    <ul class="navbar-nav float-end">
+                        <!-- ============================================================== -->
+                        <!-- Search -->
+                        <!-- ============================================================== -->
+                        <li class="nav-item d-none d-md-block">
+                            <a class="nav-link" href="static/javascript:void(0)">
+                                <form>
+                                    <div class="customize-input">
+                                        <input class="form-control custom-shadow custom-radius border-0 bg-white"
+                                            type="search" placeholder="Search" aria-label="Search">
+                                        <i class="form-control-icon" data-feather="search"></i>
+                                    </div>
+                                </form>
+                            </a>
+                        </li>
+                        <!-- ============================================================== -->
+                        <!-- User profile and search -->
+                        <!-- ============================================================== -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="static/javascript:void(0)" data-bs-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">
+                                <img src="static/assets/images/users/profile-pic.jpg" alt="user" class="rounded-circle"
+                                    width="40">
+                                <span class="ms-2 d-none d-lg-inline-block"><span>Hello,</span> <span
+                                        class="text-dark">Asia</span> <i data-feather="chevron-down"
+                                        class="svg-icon"></i></span>
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-end dropdown-menu-right user-dd animated flipInY">
+                                <a class="dropdown-item" href="static/javascript:void(0)"><i data-feather="user"
+                                        class="svg-icon me-2 ms-1"></i>
+                                    My Profile</a>
+                                <a class="dropdown-item" href="static/javascript:void(0)"><i data-feather="credit-card"
+                                        class="svg-icon me-2 ms-1"></i>
+                                    My Balance</a>
+                                <a class="dropdown-item" href="static/javascript:void(0)"><i data-feather="mail"
+                                        class="svg-icon me-2 ms-1"></i>
+                                    Inbox</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="static/javascript:void(0)"><i data-feather="settings"
+                                        class="svg-icon me-2 ms-1"></i>
+                                    Account Setting</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="static/javascript:void(0)"><i data-feather="power"
+                                        class="svg-icon me-2 ms-1"></i>
+                                    Logout</a>
+                                <div class="dropdown-divider"></div>
+                                <div class="pl-4 p-3"><a href="static/javascript:void(0)" class="btn btn-sm btn-info">View
+                                        Profile</a></div>
+                            </div>
+                        </li>
+                        <!-- ============================================================== -->
+                        <!-- User profile and search -->
+                        <!-- ============================================================== -->
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <!-- ============================================================== -->
+        <!-- End Topbar header -->
+        <!-- ============================================================== -->
+        <!-- ============================================================== -->
+        <!-- Left Sidebar - style you can find in sidebar.scss  -->
+        <!-- ============================================================== -->
+        <aside class="left-sidebar" data-sidebarbg="skin6">
+            <!-- Sidebar scroll-->
+            <div class="scroll-sidebar" data-sidebarbg="skin6">
+                <!-- Sidebar navigation-->
+                <nav class="sidebar-nav">
+                    <ul id="sidebarnav">
+                        <li class="sidebar-item"> <a class="sidebar-link sidebar-link" href="static/index.html"
+                                aria-expanded="false"><i data-feather="home" class="feather-icon"></i><span
+                                    class="hide-menu">Dashboard</span></a></li>
+                        <li class="list-divider"></li>
+                        <li class="nav-small-cap"><span class="hide-menu">Applications</span></li>
+
+                        <li class="sidebar-item"> <a class="sidebar-link" href="static/ticket-list.html"
+                                aria-expanded="false"><i data-feather="tag" class="feather-icon"></i><span
+                                    class="hide-menu">Ticket List
+                                </span></a>
+                        </li>
+                        <li class="sidebar-item"> <a class="sidebar-link sidebar-link" href="static/app-chat.html"
+                                aria-expanded="false"><i data-feather="message-square" class="feather-icon"></i><span
+                                    class="hide-menu">Chat</span></a></li>
+                        <li class="sidebar-item"> <a class="sidebar-link sidebar-link" href="static/app-calendar.html"
+                                aria-expanded="false"><i data-feather="calendar" class="feather-icon"></i><span
+                                    class="hide-menu">Calendar</span></a></li>
+
+                        <li class="list-divider"></li>
+                        <li class="nav-small-cap"><span class="hide-menu">Components</span></li>
+                        <li class="sidebar-item"> <a class="sidebar-link has-arrow" href="static/javascript:void(0)"
+                                aria-expanded="false"><i data-feather="file-text" class="feather-icon"></i><span
+                                    class="hide-menu">Forms </span></a>
+                            <ul aria-expanded="false" class="collapse  first-level base-level-line">
+                                <li class="sidebar-item"><a href="static/form-inputs.html" class="sidebar-link"><span
+                                            class="hide-menu"> Form Inputs
+                                        </span></a>
+                                </li>
+                                <li class="sidebar-item"><a href="static/form-input-grid.html" class="sidebar-link"><span
+                                            class="hide-menu"> Form Grids
+                                        </span></a>
+                                </li>
+                                <li class="sidebar-item"><a href="static/form-checkbox-radio.html" class="sidebar-link"><span
+                                            class="hide-menu"> Checkboxes &
+                                            Radios
+                                        </span></a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="sidebar-item"> <a class="sidebar-link has-arrow" href="static/javascript:void(0)"
+                                aria-expanded="false"><i data-feather="grid" class="feather-icon"></i><span
+                                    class="hide-menu">Tables </span></a>
+                            <ul aria-expanded="false" class="collapse  first-level base-level-line">
+                                <li class="sidebar-item"><a href="static/table-basic.html" class="sidebar-link"><span
+                                            class="hide-menu"> Basic Table
+                                        </span></a>
+                                </li>
+                                <li class="sidebar-item"><a href="static/table-dark-basic.html" class="sidebar-link"><span
+                                            class="hide-menu"> Dark Basic Table
+                                        </span></a>
+                                </li>
+                                <li class="sidebar-item"><a href="static/table-sizing.html" class="sidebar-link"><span
+                                            class="hide-menu">
+                                            Sizing Table
+                                        </span></a>
+                                </li>
+                                <li class="sidebar-item"><a href="static/table-layout-coloured.html" class="sidebar-link"><span
+                                            class="hide-menu">
+                                            Coloured
+                                            Table Layout
+                                        </span></a>
+                                </li>
+                                <li class="sidebar-item"><a href="static/table-datatable-basic.html" class="sidebar-link"><span
+                                            class="hide-menu">
+                                            Basic
+                                            Datatables
+                                            Layout
+                                        </span></a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="sidebar-item"> <a class="sidebar-link has-arrow" href="static/javascript:void(0)"
+                                aria-expanded="false"><i data-feather="bar-chart" class="feather-icon"></i><span
+                                    class="hide-menu">Charts </span></a>
+                            <ul aria-expanded="false" class="collapse  first-level base-level-line">
+                                <li class="sidebar-item"><a href="/chart" class="sidebar-link"><span
+                                            class="hide-menu">  Chart Detail
+                                        </span></a>
+                                </li>
+                                <li class="sidebar-item"><a href="static/chart-chart-js.html" class="sidebar-link"><span
+                                            class="hide-menu"> ChartJs
+                                        </span></a>
+                                </li>
+                                <li class="sidebar-item"><a href="static/chart-knob.html" class="sidebar-link"><span
+                                            class="hide-menu">
+                                            Knob Chart
+                                        </span></a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="sidebar-item"> <a class="sidebar-link has-arrow" href="static/javascript:void(0)"
+                                aria-expanded="false"><i data-feather="box" class="feather-icon"></i><span
+                                    class="hide-menu">UI Elements </span></a>
+                            <ul aria-expanded="false" class="collapse  first-level base-level-line">
+                                <li class="sidebar-item"><a href="static/ui-buttons.html" class="sidebar-link"><span
+                                            class="hide-menu"> Buttons
+                                        </span></a>
+                                </li>
+                                <li class="sidebar-item"><a href="static/ui-modals.html" class="sidebar-link"><span
+                                            class="hide-menu"> Modals </span></a>
+                                </li>
+                                <li class="sidebar-item"><a href="static/ui-tab.html" class="sidebar-link"><span
+                                            class="hide-menu"> Tabs </span></a></li>
+                                <li class="sidebar-item"><a href="static/ui-tooltip-popover.html" class="sidebar-link"><span
+                                            class="hide-menu"> Tooltip &
+                                            Popover</span></a></li>
+                                <li class="sidebar-item"><a href="static/ui-notification.html" class="sidebar-link"><span
+                                            class="hide-menu">Notification</span></a></li>
+                                <li class="sidebar-item"><a href="static/ui-progressbar.html" class="sidebar-link"><span
+                                            class="hide-menu">Progressbar</span></a></li>
+                                <li class="sidebar-item"><a href="static/ui-typography.html" class="sidebar-link"><span
+                                            class="hide-menu">Typography</span></a></li>
+                                <li class="sidebar-item"><a href="static/ui-bootstrap.html" class="sidebar-link"><span
+                                            class="hide-menu">Bootstrap
+                                            UI</span></a></li>
+                                <li class="sidebar-item"><a href="static/ui-breadcrumb.html" class="sidebar-link"><span
+                                            class="hide-menu">Breadcrumb</span></a></li>
+                                <li class="sidebar-item"><a href="static/ui-list-media.html" class="sidebar-link"><span
+                                            class="hide-menu">List
+                                            Media</span></a></li>
+                                <li class="sidebar-item"><a href="static/ui-grid.html" class="sidebar-link"><span
+                                            class="hide-menu"> Grid </span></a></li>
+                                <li class="sidebar-item"><a href="static/ui-carousel.html" class="sidebar-link"><span
+                                            class="hide-menu">
+                                            Carousel</span></a></li>
+                                <li class="sidebar-item"><a href="static/ui-scrollspy.html" class="sidebar-link"><span
+                                            class="hide-menu">
+                                            Scrollspy</span></a></li>
+                                <li class="sidebar-item"><a href="static/ui-toasts.html" class="sidebar-link"><span
+                                            class="hide-menu"> Toasts</span></a>
+                                </li>
+                                <li class="sidebar-item"><a href="static/ui-spinner.html" class="sidebar-link"><span
+                                            class="hide-menu"> Spinner </span></a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="sidebar-item"> <a class="sidebar-link sidebar-link" href="static/ui-cards.html"
+                                aria-expanded="false"><i data-feather="sidebar" class="feather-icon"></i><span
+                                    class="hide-menu">Cards
+                                </span></a>
+                        </li>
+                        <li class="list-divider"></li>
+                        <li class="nav-small-cap"><span class="hide-menu">Authentication</span></li>
+
+                        <li class="sidebar-item"> <a class="sidebar-link sidebar-link" href="static/authentication-login1.html"
+                                aria-expanded="false"><i data-feather="lock" class="feather-icon"></i><span
+                                    class="hide-menu">Login
+                                </span></a>
+                        </li>
+                        <li class="sidebar-item"> <a class="sidebar-link sidebar-link"
+                                href="static/authentication-register1.html" aria-expanded="false"><i data-feather="lock"
+                                    class="feather-icon"></i><span class="hide-menu">Register
+                                </span></a>
+                        </li>
+
+                        <li class="sidebar-item"> <a class="sidebar-link has-arrow" href="static/javascript:void(0)"
+                                aria-expanded="false"><i data-feather="feather" class="feather-icon"></i><span
+                                    class="hide-menu">Icons
+                                </span></a>
+                            <ul aria-expanded="false" class="collapse first-level base-level-line">
+                                <li class="sidebar-item"><a href="static/icon-fontawesome.html" class="sidebar-link"><span
+                                            class="hide-menu"> Fontawesome Icons </span></a></li>
+
+                                <li class="sidebar-item"><a href="static/icon-simple-lineicon.html" class="sidebar-link"><span
+                                            class="hide-menu"> Simple Line Icons </span></a></li>
+                            </ul>
+                        </li>
+
+                        
+                        <li class="list-divider"></li>
+                        <li class="nav-small-cap"><span class="hide-menu">Extra</span></li>
+                        
+                        <li class="sidebar-item"> <a class="sidebar-link sidebar-link" href="static/authentication-login1.html"
+                                aria-expanded="false"><i data-feather="log-out" class="feather-icon"></i><span
+                                    class="hide-menu">Logout</span></a></li>
+                                    <li class="sidebar-item"> <a class="sidebar-link has-arrow" href="static/javascript:void(0)"
+                                        aria-expanded="false"><i data-feather="crosshair" class="feather-icon"></i><span
+                                            class="hide-menu">Multi
+                                            level
+                                            dd</span></a>
+                                    <ul aria-expanded="false" class="collapse first-level base-level-line">
+                                        <li class="sidebar-item"><a href="static/javascript:void(0)" class="sidebar-link"><span
+                                                    class="hide-menu"> item 1.1</span></a>
+                                        </li>
+                                        <li class="sidebar-item"><a href="static/javascript:void(0)" class="sidebar-link"><span
+                                                    class="hide-menu"> item 1.2</span></a>
+                                        </li>
+                                        <li class="sidebar-item"> <a class="has-arrow sidebar-link" href="static/javascript:void(0)"
+                                                aria-expanded="false"><span class="hide-menu">Menu 1.3</span></a>
+                                            <ul aria-expanded="false" class="collapse second-level base-level-line">
+                                                <li class="sidebar-item"><a href="static/javascript:void(0)" class="sidebar-link"><span
+                                                            class="hide-menu"> item
+                                                            1.3.1</span></a></li>
+                                                <li class="sidebar-item"><a href="static/javascript:void(0)" class="sidebar-link"><span
+                                                            class="hide-menu"> item
+                                                            1.3.2</span></a></li>
+                                                <li class="sidebar-item"><a href="static/javascript:void(0)" class="sidebar-link"><span
+                                                            class="hide-menu"> item
+                                                            1.3.3</span></a></li>
+                                                <li class="sidebar-item"><a href="static/javascript:void(0)" class="sidebar-link"><span
+                                                            class="hide-menu"> item
+                                                            1.3.4</span></a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="sidebar-item"><a href="static/javascript:void(0)" class="sidebar-link"><span
+                                                    class="hide-menu"> item
+                                                    1.4</span></a></li>
+                                    </ul>
+                                </li>
+                    </ul>
+                </nav>
+                <!-- End Sidebar navigation -->
+            </div>
+            <!-- End Sidebar scroll-->
+        </aside>
+        <!-- ============================================================== -->
+        <!-- End Left Sidebar - style you can find in sidebar.scss  -->
+        <!-- ============================================================== -->
+        <!-- ============================================================== -->
+        <!-- Page wrapper  -->
+        <!-- ============================================================== -->
+        <div class="page-wrapper">
+            <!-- ============================================================== -->
+            <!-- Bread crumb and right sidebar toggle -->
+            <!-- ============================================================== -->
+            <div class="page-breadcrumb">
+                <div class="row">
+                    <div class="col-7 align-self-center">
+                        <h3 class="page-title text-truncate text-dark font-weight-medium mb-1">Good Morning Economy!</h3>
+                        <div class="d-flex align-items-center">
+                            <nav aria-label="breadcrumb">
+                                <ol class="breadcrumb m-0 p-0">
+                                    <li class="breadcrumb-item"><a href="static/index.html">Dashboard</a>
+                                    </li>
+                                </ol>
+                            </nav>
+                        </div>
+                    </div>
+                    <div class="col-5 align-self-center">
+                        <div class="customize-input float-end">
+                            <select class="custom-select custom-select-set form-control bg-white border-0 custom-shadow custom-radius">
+                                <option selected>Mar 03</option>
+                                <option value="1">July 23</option>
+                                <option value="2">Jun 23</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- ============================================================== -->
+            <!-- End Bread crumb and right sidebar toggle -->
+            <!-- ============================================================== -->
+            <!-- ============================================================== -->
+            <!-- Container fluid  -->
+            <!-- ============================================================== -->
+            <div class="container-fluid">
+                <!-- *************************************************************** -->
+                <!-- Start First Cards -->
+                <!-- *************************************************************** -->
+                <div class="row">
+                    <div class="col-sm-6 col-lg-3">
+                        <div class="card border-end">
+                            <div class="card-body">
+                                <div class="d-flex align-items-center">
+                                    <div>
+                                        <div class="d-inline-flex align-items-center">
+                                            <h2 class="text-dark mb-1 font-weight-medium">PPI</h2>
+                                            <span
+                                                class="badge bg-primary font-12 text-white font-weight-medium rounded-pill ms-2 d-lg-block d-md-none">+0.4%</span>
+                                        </div>
+                                        <h6 class="text-muted font-weight-normal mb-0 w-100 text-truncate">전월대비
+                                        </h6>
+                                    </div>
+                                    <div class="ms-auto mt-md-3 mt-lg-0">
+<!--                                        <span class="opacity-7 text-muted"><i data-feather="user-plus"></i></span>-->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-3">
+                        <div class="card border-end ">
+                            <div class="card-body">
+                                <div class="d-flex align-items-center">
+                                    <div>
+                                        <h2 class="text-dark mb-1 w-100 text-truncate font-weight-medium">Won/Dollar</h2>
+
+                                        <h6 class="text-muted font-weight-normal mb-0 w-100 text-truncate">${{DOLLAR}}
+                                        </h6>
+                                    </div>
+                                    <div class="ms-auto mt-md-3 mt-lg-0">
+<!--                                        <span class="opacity-7 text-muted"><i data-feather="dollar-sign"></i></span>-->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-3">
+                        <div class="card border-end ">
+                            <div class="card-body">
+                                <div class="d-flex align-items-center">
+                                    <div>
+                                        <div class="d-inline-flex align-items-center">
+                                            <h2 class="text-dark mb-1 font-weight-medium">GDP</h2>
+                                            <span
+                                                class="badge bg-danger font-12 text-white font-weight-medium rounded-pill ms-2 d-md-none d-lg-block">-0.4%</span>
+                                        </div>
+                                        <h6 class="text-muted font-weight-normal mb-0 w-100 text-truncate">전기대비</h6>
+                                    </div>
+                                    <div class="ms-auto mt-md-3 mt-lg-0">
+<!--                                        <span class="opacity-7 text-muted"><i data-feather="file-plus"></i></span>-->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-3">
+                        <div class="card ">
+                            <div class="card-body">
+                                <div class="d-flex align-items-center">
+                                    <div class="d-inline-flex align-items-center">
+                                            <h2 class="text-dark mb-1 font-weight-medium">CPI</h2>
+                                            <span
+                                                class="badge bg-primary font-12 text-white font-weight-medium rounded-pill ms-2 d-lg-block d-md-none">+0.8</span>
+
+                                    </div>
+
+                                    <div class="ms-auto mt-md-3 mt-lg-0">
+<!--                                        <span class="opacity-7 text-muted"><i data-feather="globe"></i></span>-->
+
+                                    </div>
+                                </div>
+                                <h6 class="text-muted font-weight-normal mb-0 w-100 text-truncate">전월대비</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- *************************************************************** -->
+                <!-- End First Cards -->
+                <!-- *************************************************************** -->
+                <!-- *************************************************************** -->
+                <!-- Start Sales Charts Section -->
+                <!-- *************************************************************** -->
+                <div class="row">
+                    <div class="col-lg-4 col-md-12">
+                        <div class="card" style="height:469px; width:810px;">
+
+                            <div class="card-body">
+
+
+                                <h4 class="card-title">KOREA/USA INTEREST RATE</h4>
+
+<!--                                <div id="campaign-v2" class="mt-2" style="height:700px; width:100%;"></div>-->
+<!--                                <ul class="list-style-none mb-0">-->
+
+                                <div>
+    <iframe width="770" height="400" frameborder="0" scrolling="no" src="//plotly.com/~seoyellm980/18.embed"></iframe>
+</div>
+
+<!--                                <ul class="list-style-none mb-0">-->
+<!--                                    <li>-->
+<!--                                        <i class="fas fa-circle text-primary font-10 me-2"></i>-->
+<!--                                        <span class="text-muted">Direct Sales</span>-->
+<!--                                        <span class="text-dark float-end font-weight-medium">$2346</span>-->
+<!--                                    </li>-->
+<!--                                    <li class="mt-3">-->
+<!--                                        <i class="fas fa-circle text-danger font-10 me-2"></i>-->
+<!--                                        <span class="text-muted">Referral Sales</span>-->
+<!--                                        <span class="text-dark float-end font-weight-medium">$2108</span>-->
+<!--                                    </li>-->
+<!--                                    <li class="mt-3">-->
+<!--                                        <i class="fas fa-circle text-cyan font-10 me-2"></i>-->
+<!--                                        <span class="text-muted">Affiliate Sales</span>-->
+<!--                                        <span class="text-dark float-end font-weight-medium">$1204</span>-->
+<!--                                    </li>-->
+<!--                                </ul>-->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-12">
+<!--                        <div class="card">-->
+<!--                            <div class="card-body">-->
+<!--                                <h4 class="card-title">Net Income</h4>-->
+<!--                                <div class="net-income mt-4 position-relative" style="height:294px;"></div>-->
+<!--                                <ul class="list-inline text-center mt-5 mb-2">-->
+<!--                                    <li class="list-inline-item text-muted fst-italic">Sales for this month</li>-->
+<!--                                </ul>-->
+<!--                            </div>-->
+<!--                        </div>-->
+                    </div>
+                    <div class="col-lg-4 col-md-12">
+                        <div class="card">
+                            <div class="card-body" style="height:469px;>
+                                <h4 class="card-title mb-4">STOCK INDEX</h4>
+                                <div class="" style="height:180px">
+                                    <div>
+<!--                                            id="visitbylocate" style="height:100%"-->
+                                    {{KEY_MAP|safe}}
+                                </div>
+                                </div>
+                                <div class="row mb-3 align-items-center mt-1 mt-5">
+<!--                                    <div class="col-4 text-end">-->
+<!--                                        <span class="text-muted font-14">India</span>-->
+<!--                                    </div>-->
+<!--                                    <div class="col-5">-->
+<!--                                        <div class="progress" style="height: 5px;">-->
+<!--                                            <div class="progress-bar bg-primary" role="progressbar" style="width: 100%"-->
+<!--                                                aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>-->
+<!--                                        </div>-->
+<!--                                    </div>-->
+<!--                                    <div class="col-3 text-end">-->
+<!--                                        <span class="mb-0 font-14 text-dark font-weight-medium">28%</span>-->
+<!--                                    </div>-->
+                                </div>
+<!--                                <div class="row mb-3 align-items-center">-->
+<!--                                    <div class="col-4 text-end">-->
+<!--                                        <span class="text-muted font-14">UK</span>-->
+<!--                                    </div>-->
+<!--                                    <div class="col-5">-->
+<!--                                        <div class="progress" style="height: 5px;">-->
+<!--                                            <div class="progress-bar bg-danger" role="progressbar" style="width: 74%"-->
+<!--                                                aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>-->
+<!--                                        </div>-->
+<!--                                    </div>-->
+<!--                                    <div class="col-3 text-end">-->
+<!--                                        <span class="mb-0 font-14 text-dark font-weight-medium">21%</span>-->
+<!--                                    </div>-->
+<!--                                </div>-->
+                                <div class="row mb-3 align-items-center">
+                                    <div class="col-4 text-end">
+                                        <span class="text-muted font-14">NASDAQ</span>
+                                    </div>
+                                    <div class="col-5">
+                                        <div class="progress" style="height: 5px;">
+                                            <div class="progress-bar bg-cyan" role="progressbar" style="width: 72%"
+                                                aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-3 text-end">
+                                        <span class="mb-0 font-14 text-dark font-weight-medium"><font color="black">{{NASDAQ}}</font></span>
+                                    </div>
+                                </div>
+                                <div class="row align-items-center">
+                                    <div class="col-4 text-end">
+                                        <span class="text-muted font-14">KOSPI</span>
+                                    </div>
+                                    <div class="col-5">
+                                        <div class="progress" style="height: 5px;">
+                                            <div class="progress-bar bg-success" role="progressbar" style="width: 35%"
+                                                aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-3 text-end">
+                                        <span class="mb-0 font-14 text-dark font-weight-medium"><font color="black">{{KOSPI}}</font></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- *************************************************************** -->
+                <!-- End Sales Charts Section -->
+                <!-- *************************************************************** -->
+                <!-- *************************************************************** -->
+                <!-- Start Location and Earnings Charts Section -->
+                <!-- *************************************************************** -->
+                <div class="row">
+                    <div class="col-md-6 col-lg-8">
+                        <div class="card">
+                            <div class="card-body" >
+                                <div class="d-flex align-items-start">
+                                    <h4 class="card-title mb-0">Youtube</h4>
+                                    <div class="ms-auto">
+                                        <div class="dropdown sub-dropdown">
+                                            <button class="btn btn-link text-muted dropdown-toggle" type="button"
+                                                id="dd1" data-bs-toggle="dropdown" aria-haspopup="true"
+                                                aria-expanded="false">
+                                                <i data-feather="more-vertical"></i>
+                                            </button>
+                                            <div class="dropdown-menu dropdown-menu-end" aria-labelledby="dd1">
+                                                <a class="dropdown-item" href="static/#">Insert</a>
+                                                <a class="dropdown-item" href="static/#">Update</a>
+                                                <a class="dropdown-item" href="static/#">Delete</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+<!--                                <div class="pl-4 mb-5">-->
+<!--&lt;!&ndash;                                    <div class="stats ct-charts position-relative" style="height: 315px;"></div>&ndash;&gt;-->
+<!--&lt;!&ndash;                                            <div class="grid text-center">&ndash;&gt;-->
+<!--&lt;!&ndash;                                              <div class="g-col-6">.g-col-6</div>&ndash;&gt;-->
+<!--&lt;!&ndash;                                              <div class="g-col-6">.g-col-6</div>&ndash;&gt;-->
+
+<!--&lt;!&ndash;                                              <div class="g-col-6">.g-col-6</div>&ndash;&gt;-->
+<!--&lt;!&ndash;                                              <div class="g-col-6">.g-col-6</div>&ndash;&gt;-->
+<!--&lt;!&ndash;                                            </div>&ndash;&gt;-->
+
+<!--                                        <div class="g-col-4">-->
+
+<!--&lt;!&ndash;                                            {{KEY_MY_LIST[0].title}}&ndash;&gt;-->
+
+
+<!--                                        </div>-->
+
+<!--                                        <div class="g-col-4">-->
+<!--                                            <font size="3">{{KEY_MY_LIST[0].title}}</font>-->
+<!--                                            <a href={{KEY_MY_LIST[0].url}}>-->
+<!--                                            <img width="45%" src="{{KEY_MY_LIST[0].img}}"></a>-->
+<!--                                            <font size="3">{{KEY_MY_LIST[1].title}}</font>-->
+<!--                                        <a href={{KEY_MY_LIST[1].url}}>-->
+<!--                                            <img width="45%" src="{{KEY_MY_LIST[1].img}}"></a>-->
+<!--                                        </div>-->
+<!--                                </div>-->
+<div class="container text-center">
+  <div class="row row-cols-2">
+
+
+{% for dic in KEY_MY_LIST %}
+                                <div class="col">
+<!--                                    {{KEY_MY_LIST|safe}}-->
+<!--                                    <div class="stats ct-charts position-relative" style="height: 315px;"></div>-->
+                                <div class="row">
+                                    <div class="row">
+                                        <div class="col">
+
+                                            <a href={{dic.url}}>
+                                                <img width="80%" src="{{dic.img}}"><br>
+                                                <font  color = 'black' size="2"><b>{{dic.title}}</b></font></a>
+                                        </div>
+                                    </div>
+                                </div>
+                               </div>
+{% endfor %}
+
+  </div>
+</div>
+
+                                <ul class="list-inline text-center mt-4 mb-0">
+                                    <li class="list-inline-item text-muted fst-italic"></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card">
+                            <div class="card-body" style="height:697px;>
+                                <h4 class="card-title">Economic News</h4>
+                                <div class="mt-4 activity">
+                                    <div class="d-flex align-items-start border-left-line pb-3">
+                                        <div>
+                                            <a href="static/javascript:void(0)" class="btn btn-info btn-circle mb-2 btn-item">
+                                                <i data-feather="bell"></i>
+                                            </a>
+                                        </div>
+                                        <div class="ms-3 mt-2">
+                                            <h5 class="text-dark font-weight-medium mb-2"><a href = "https://www.hani.co.kr/arti/economy/finance/1079607.html"> 12월 통화량 6조원 줄었다…9개월 만에 감소 전환</a></h5>
+                                            <p class="font-14 mb-2 text-muted">광의통화(M2)는 통화량을 나타내는 대표적인 지표로, 현금과 요구불예금은 물론 현금화가 쉬운 만기 2년 미만의 정기 예·적금과 각종 금융상품이 포함된다. 지난달 광의통화가 감소한 것은 기업들이 자금을 만기 2년 이상의 금융상품으로... <br>
+
+                                            </p>
+                                            <span class="font-weight-light font-14 text-muted">10 Minutes Ago</span>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-start border-left-line pb-3">
+                                        <div>
+                                            <a href="static/javascript:void(0)"
+                                                class="btn btn-danger btn-circle mb-2 btn-item">
+                                                <i data-feather="bell"></i>
+                                            </a>
+                                        </div>
+                                        <div class="ms-3 mt-2">
+                                            <h5 class="text-dark font-weight-medium mb-2"><a href = "http://www.ekoreanews.co.kr/news/articleView.html?idxno=65572">한미 금리차 확대 전망, 환율·경기 리스크↑</a></h5>
+                                            <p class="font-14 mb-2 text-muted">한국은행 금융통화위원회(이하 금통위)가 기준금리 동결을 ... 등 금리 역전 상황에서도 오히려 원화채권에 더 많은 투자금이 몰렸다.보고서를 작성한 김용준 국제금융센터..
+
+ <br>
+                                                </p>
+                                            <span class="font-weight-light font-14 text-muted">25 Minutes Ago</span>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-start border-left-line">
+                                        <div>
+                                            <a href="static/javascript:void(0)" class="btn btn-cyan btn-circle mb-2 btn-item">
+                                                <i data-feather="bell"></i>
+                                            </a>
+                                        </div>
+                                        <div class="ms-3 mt-2">
+                                            <h5 class="text-dark font-weight-medium mb-2"><a href = "https://news.einfomax.co.kr/news/articleView.html?idxno=4256110">월가, 연준 금리 6%까지 인상할 듯…침체 위험도 커져</a>
+                                            </h5>
+                                            <p class="font-14 mb-2 text-muted">지난주말 발표된 근원 개인소비지출(PCE) 가격지수를 포함한 최근 경제지표는 연방준비제도(Fed 연준)가 채권시장이 예상했던 것보다...
+ <br></p>
+                                            <span class="font-weight-light font-14 mb-1 d-block text-muted">2 Hours
+                                                Ago</span>
+                                            <a href="static/javascript:void(0)"
+                                                class="font-14 border-bottom pb-1 border-info">Load More</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- *************************************************************** -->
+                <!-- End Location and Earnings Charts Section -->
+                <!-- *************************************************************** -->
+                <!-- *************************************************************** -->
+                <!-- Start Top Leader Table -->
+                <!-- *************************************************************** -->
+                <div class="row">
+                    <div class="col-12">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="d-flex align-items-center mb-4">
+                                    <h4 class="card-title">Top Leaders</h4>
+                                    <div class="ms-auto">
+                                        <div class="dropdown sub-dropdown">
+                                            <button class="btn btn-link text-muted dropdown-toggle" type="button"
+                                                id="dd1" data-bs-toggle="dropdown" aria-haspopup="true"
+                                                aria-expanded="false">
+                                                <i data-feather="more-vertical"></i>
+                                            </button>
+                                            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dd1">
+                                                <a class="dropdown-item" href="static/#">Insert</a>
+                                                <a class="dropdown-item" href="static/#">Update</a>
+                                                <a class="dropdown-item" href="static/#">Delete</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="table-responsive">
+                                    <table class="table no-wrap v-middle mb-0">
+                                        <thead>
+                                            <tr class="border-0">
+                                                <th class="border-0 font-14 font-weight-medium text-muted">Team Lead
+                                                </th>
+                                                <th class="border-0 font-14 font-weight-medium text-muted px-2">Project
+                                                </th>
+                                                <th class="border-0 font-14 font-weight-medium text-muted">Team</th>
+                                                <th class="border-0 font-14 font-weight-medium text-muted text-center">
+                                                    Status
+                                                </th>
+                                                <th class="border-0 font-14 font-weight-medium text-muted text-center">
+                                                    Weeks
+                                                </th>
+                                                <th class="border-0 font-14 font-weight-medium text-muted">Budget</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td class="border-top-0 px-2 py-4">
+                                                    <div class="d-flex no-block align-items-center">
+                                                        <div class="me-3"><img
+                                                                src="https://m.cattery.co.kr/_dj/img/main_section_1_img1.jpg"
+                                                                alt="user" class="rounded-circle" width="45"
+                                                                height="45" /></div>
+                                                        <div class="">
+                                                            <h5 class="text-dark mb-0 font-16 font-weight-medium">Ye rim Seo</h5>
+                                                            <span class="text-muted font-14">seoyellm980@gmail.com</span>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td class="border-top-0 text-muted px-2 py-4 font-14">Good Morning Economy</td>
+                                                <td class="border-top-0 px-2 py-4">
+                                                    <div class="popover-icon">
+                                                        <a class="btn btn-primary rounded-circle btn-circle font-12"
+                                                            href="static/javascript:void(0)">DS</a>
+                                                        <a class="btn btn-danger rounded-circle btn-circle font-12 popover-item"
+                                                            href="static/javascript:void(0)">SS</a>
+                                                        <a class="btn btn-cyan rounded-circle btn-circle font-12 popover-item"
+                                                            href="static/javascript:void(0)">RP</a>
+                                                        <a class="btn btn-success text-white rounded-circle btn-circle font-20"
+                                                            href="static/javascript:void(0)">+</a>
+                                                    </div>
+                                                </td>
+                                                <td class="border-top-0 text-center px-2 py-4"><i
+                                                        class="fa fa-circle text-primary font-12"
+                                                        data-bs-toggle="tooltip" data-placement="top"
+                                                        title="In Testing"></i></td>
+                                                <td
+                                                    class="border-top-0 text-center font-weight-medium text-muted px-2 py-4">
+                                                    35
+                                                </td>
+                                                <td class="font-weight-medium text-dark border-top-0 px-2 py-4">$96K
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="px-2 py-4">
+                                                    <div class="d-flex no-block align-items-center">
+                                                        <div class="me-3"><img
+                                                                src="https://blog.kakaocdn.net/dn/zfQQi/btrydI0vGzm/3YY3KrPEwKN558e27H6t0k/img.jpg"
+                                                                alt="user" class="rounded-circle" width="45"
+                                                                height="45" /></div>
+                                                        <div class="">
+                                                            <h5 class="text-dark mb-0 font-16 font-weight-medium">Eun Kyoung Park
+                                                            </h5>
+                                                            <span class="text-muted font-14">nebiseil@gmail.com</span>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td class="text-muted px-2 py-4 font-14">Good Morning Economy</td>
+                                                <td class="px-2 py-4">
+                                                    <div class="popover-icon">
+                                                        <a class="btn btn-primary rounded-circle btn-circle font-12"
+                                                            href="static/javascript:void(0)">DS</a>
+                                                        <a class="btn btn-danger rounded-circle btn-circle font-12 popover-item"
+                                                            href="static/javascript:void(0)">SS</a>
+                                                        <a class="btn btn-success text-white rounded-circle btn-circle font-20"
+                                                            href="static/javascript:void(0)">+</a>
+                                                    </div>
+                                                </td>
+                                                <td class="text-center px-2 py-4"><i
+                                                        class="fa fa-circle text-success font-12"
+                                                        data-bs-toggle="tooltip" data-placement="top" title="Done"></i>
+                                                </td>
+                                                <td class="text-center text-muted font-weight-medium px-2 py-4">32</td>
+                                                <td class="font-weight-medium text-dark px-2 py-4">$85K</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="px-2 py-4">
+                                                    <div class="d-flex no-block align-items-center">
+                                                        <div class="me-3"><img
+                                                                src="http://preview.kyobobook.co.kr/preview/008/epb/183/4801196447183/images/008_2.jpg"
+                                                                alt="user" class="rounded-circle" width="45"
+                                                                height="45" /></div>
+                                                        <div class="">
+                                                            <h5 class="text-dark mb-0 font-16 font-weight-medium">So young Ham
+                                                            </h5>
+                                                            <span class="text-muted font-14">rgotenda@gmail.com</span>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td class="text-muted px-2 py-4 font-14">Good Morning Economy</td>
+                                                <td class="px-2 py-4">
+                                                    <div class="popover-icon">
+                                                        <a class="btn btn-primary rounded-circle btn-circle font-12"
+                                                            href="static/javascript:void(0)">DS</a>
+                                                        <a class="btn btn-danger rounded-circle btn-circle font-12 popover-item"
+                                                            href="static/javascript:void(0)">SS</a>
+                                                        <a class="btn btn-cyan rounded-circle btn-circle font-12 popover-item"
+                                                            href="static/javascript:void(0)">RP</a>
+                                                        <a class="btn btn-success text-white rounded-circle btn-circle font-20"
+                                                            href="static/javascript:void(0)">+</a>
+                                                    </div>
+                                                </td>
+                                                <td class="text-center px-2 py-4"><i
+                                                        class="fa fa-circle text-primary font-12"
+                                                        data-bs-toggle="tooltip" data-placement="top" title="Done"></i>
+                                                </td>
+                                                <td class="text-center text-muted font-weight-medium px-2 py-4">29</td>
+                                                <td class="font-weight-medium text-dark px-2 py-4">$81K</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="border-bottom-0 px-2 py-4">
+                                                    <div class="d-flex no-block align-items-center">
+                                                        <div class="me-3"><img
+                                                                src="https://img.freepik.com/free-photo/adorable-kitty-looking-like-it-want-to-hunt_23-2149167099.jpg?w=2000"
+                                                                alt="user" class="rounded-circle" width="45"
+                                                                height="45" /></div>
+                                                        <div class="">
+                                                            <h5 class="text-dark mb-0 font-16 font-weight-medium">Young gi Lee
+                                                            </h5>
+                                                            <span class="text-muted font-14">123duru@gmail.com</span>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td class="border-bottom-0 text-muted px-2 py-4 font-14">Good Morning Economy</td>
+                                                <td class="border-bottom-0 px-2 py-4">
+                                                    <div class="popover-icon">
+                                                        <a class="btn btn-primary rounded-circle btn-circle font-12"
+                                                            href="static/javascript:void(0)">DS</a>
+                                                        <a class="btn btn-success text-white font-20 rounded-circle btn-circle"
+                                                            href="static/javascript:void(0)">+</a>
+                                                    </div>
+                                                </td>
+                                                <td class="border-bottom-0 text-center px-2 py-4"><i
+                                                        class="fa fa-circle text-danger font-12"
+                                                        data-bs-toggle="tooltip" data-placement="top"
+                                                        title="In Progress"></i></td>
+                                                <td
+                                                    class="border-bottom-0 text-center text-muted font-weight-medium px-2 py-4">
+                                                    23</td>
+                                                <td class="border-bottom-0 font-weight-medium text-dark px-2 py-4">$80K
+                                                </td>
+                                            </tr>
+                                        <tr>
+                                                <td class="border-bottom-0 px-2 py-4">
+                                                    <div class="d-flex no-block align-items-center">
+                                                        <div class="me-3"><img
+                                                                src="https://images.mypetlife.co.kr/content/uploads/2019/09/09152828/nour-wageh-79cORSUwP0c-unsplash.jpg"
+                                                                alt="user" class="rounded-circle" width="45"
+                                                                height="45" /></div>
+                                                        <div class="">
+                                                            <h5 class="text-dark mb-0 font-16 font-weight-medium">Ho yeup Lee
+                                                            </h5>
+                                                            <span class="text-muted font-14">duqghdl123@gmail.com</span>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td class="border-bottom-0 text-muted px-2 py-4 font-14">Good Morning Economy</td>
+                                                <td class="border-bottom-0 px-2 py-4">
+                                                    <div class="popover-icon">
+                                                        <a class="btn btn-primary rounded-circle btn-circle font-12"
+                                                            href="static/javascript:void(0)">DS</a>
+                                                        <a class="btn btn-success text-white font-20 rounded-circle btn-circle"
+                                                            href="static/javascript:void(0)">+</a>
+                                                    </div>
+                                                </td>
+                                                <td class="border-bottom-0 text-center px-2 py-4"><i
+                                                        class="fa fa-circle text-danger font-12"
+                                                        data-bs-toggle="tooltip" data-placement="top"
+                                                        title="In Progress"></i></td>
+                                                <td
+                                                    class="border-bottom-0 text-center text-muted font-weight-medium px-2 py-4">
+                                                    23</td>
+                                                <td class="border-bottom-0 font-weight-medium text-dark px-2 py-4">$80K
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- *************************************************************** -->
+                <!-- End Top Leader Table -->
+                <!-- *************************************************************** -->
+            </div>
+            <!-- ============================================================== -->
+            <!-- End Container fluid  -->
+            <!-- ============================================================== -->
+            <!-- ============================================================== -->
+            <!-- footer -->
+            <!-- ============================================================== -->
+            <footer class="footer text-center text-muted">
+                All Rights Reserved by Freedash. Designed and Developed by <a
+                    href="static/https://adminmart.com/">Adminmart</a>.
+            </footer>
+            <!-- ============================================================== -->
+            <!-- End footer -->
+            <!-- ============================================================== -->
+        </div>
+        <!-- ============================================================== -->
+        <!-- End Page wrapper  -->
+        <!-- ============================================================== -->
+    </div>
+    <!-- ============================================================== -->
+    <!-- End Wrapper -->
+    <!-- ============================================================== -->
+    <!-- End Wrapper -->
+    <!-- ============================================================== -->
+    <!-- All Jquery -->
+    <!-- ============================================================== -->
+    <script src="static/assets/libs/jquery/dist/jquery.min.js"></script>
+    <script src="static/assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- apps -->
+    <!-- apps -->
+    <script src="static/dist/js/app-style-switcher.js"></script>
+    <script src="static/dist/js/feather.min.js"></script>
+    <script src="static/assets/libs/perfect-scrollbar/dist/perfect-scrollbar.jquery.min.js"></script>
+    <script src="static/dist/js/sidebarmenu.js"></script>
+    <!--Custom JavaScript -->
+    <script src="static/dist/js/custom.min.js"></script>
+    <!--This page JavaScript -->
+    <script src="static/assets/extra-libs/c3/d3.min.js"></script>
+    <script src="static/assets/extra-libs/c3/c3.min.js"></script>
+    <script src="static/assets/libs/chartist/dist/chartist.min.js"></script>
+    <script src="static/assets/libs/chartist-plugin-tooltips/dist/chartist-plugin-tooltip.min.js"></script>
+    <script src="static/assets/extra-libs/jvector/jquery-jvectormap-2.0.2.min.js"></script>
+    <script src="static/assets/extra-libs/jvector/jquery-jvectormap-world-mill-en.js"></script>
+    <script src="static/dist/js/pages/dashboards/dashboard1.min.js"></script>
+</body>
+
+</html>
